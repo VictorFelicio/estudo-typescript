@@ -1,4 +1,4 @@
-import { sum } from '../src/calc';
+import { sum } from '../src/exemple';
 
 test('Deve somar corretamente', () => {
     const result = sum(5, 5);
