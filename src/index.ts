@@ -4,4 +4,5 @@
 //import './types/enums-const';
 //import './types/null';
 //import './desafios/desafio-final';
-import './types/classes';
+//import './types/classes';
+import './types/classes2';
