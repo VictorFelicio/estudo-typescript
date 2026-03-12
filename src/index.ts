@@ -5,4 +5,5 @@
 //import './types/null';
 //import './desafios/desafio-final';
 //import './types/classes';
-import './types/classes2';
+//import './types/classes2';
+import './poo/Produto';
