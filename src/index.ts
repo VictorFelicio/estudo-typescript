@@ -6,4 +6,5 @@
 //import './desafios/desafio-final';
 //import './types/classes';
 //import './types/classes2';
-import './poo/Produto';
+//import './poo/Produto';
+import './desafios/desafio-estatico';
