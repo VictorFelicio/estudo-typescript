@@ -8,4 +8,5 @@
 //import './types/classes2';
 //import './poo/Produto';
 //import './desafios/desafio-estatico';
-import './poo/interface';
+//import './poo/interface';
+import './poo/funcao';
