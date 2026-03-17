@@ -7,4 +7,5 @@
 //import './types/classes';
 //import './types/classes2';
 //import './poo/Produto';
-import './desafios/desafio-estatico';
+//import './desafios/desafio-estatico';
+import './poo/interface';
