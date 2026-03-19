@@ -11,4 +11,6 @@
 //import './poo/interface';
 //import './poo/funcao';
 //import './pilares/encapsulamento';
-import './pilares/heranca';
+//import './pilares/heranca';
+//import './pilares/heranca2';
+import './pilares/heranca3';
