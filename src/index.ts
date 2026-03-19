@@ -10,4 +10,5 @@
 //import './desafios/desafio-estatico';
 //import './poo/interface';
 //import './poo/funcao';
-import './pilares/encapsulamento';
+//import './pilares/encapsulamento';
+import './pilares/heranca';
