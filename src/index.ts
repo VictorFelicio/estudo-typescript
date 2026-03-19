@@ -9,4 +9,5 @@
 //import './poo/Produto';
 //import './desafios/desafio-estatico';
 //import './poo/interface';
-import './poo/funcao';
+//import './poo/funcao';
+import './pilares/encapsulamento';
