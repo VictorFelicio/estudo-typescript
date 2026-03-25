@@ -24,3 +24,30 @@ describe('Teste Utils.min', () => {
         expect(arrayNulo).toBeNull();
     });
 });
+
+describe('Teste Utils.somarArray', () => {
+    test('Deve retornar zero quando o array é vazio', () => {
+        const dados: number[] = [];
+        const value = Utils.somaArray(dados);
+
+        expect(value).toBe(0);
+    });
+    test('Deve retornar o valor com positivos inteiros', () => {
+        const dados: number[] = [1, 2, 3, 4];
+        const value = Utils.somaArray(dados);
+
+        expect(value).toBe(10);
+    });
+    test('Deve retornar o valor com negativos inteiros', () => {
+        const dados: number[] = [-1, -2, -3, -4];
+        const value = Utils.somaArray(dados);
+
+        expect(value).toBe(-10);
+    });
+    test('Deve retornar o valor com flutuantes', () => {
+        const dados: number[] = [-1.32, -2.00005, -3, 4];
+        const value = Utils.somaArray(dados);
+
+        expect(value).toBeCloseTo(-2.32005);
+    });
+});
