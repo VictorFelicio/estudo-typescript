@@ -12,3 +12,15 @@ describe('Teste Utils.max', () => {
         expect(arrayNulo).toBeNull();
     });
 });
+describe('Teste Utils.min', () => {
+    test('Deve retornar o menor número do array', () => {
+        const maior = Utils.min([10, 9, 8, 10, 11, 3, 7]);
+
+        expect(maior).toBe(3);
+    });
+    test('Deve retornar o nulo caso esteja vazio', () => {
+        const arrayNulo = Utils.min([]);
+
+        expect(arrayNulo).toBeNull();
+    });
+});

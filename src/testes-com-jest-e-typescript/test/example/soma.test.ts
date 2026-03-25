@@ -1,4 +1,4 @@
-import { somar } from '../function/somar';
+import { somar } from '../../function/somar';
 
 describe('Função somar', () => {
     test('Deve somar corretamente', () => {
