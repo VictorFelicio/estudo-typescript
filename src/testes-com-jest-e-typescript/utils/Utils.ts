@@ -35,11 +35,11 @@ export class Utils {
             .join(' ');
     }
 
-    static encontrarPorId(array: any, id: number) {
+    static encontrarPorId(array: { id: number; [key: string]: any }[], id: number) {
         return array.find((elemento: any) => elemento.id === id);
     }
 
-    static inverterObjeto(objeto: any): any {
+    static inverterObjeto(objeto: object): any {
         return Object.entries(objeto).reduce(
             (novoObjeto, [chave, valor]) => {
                 if (typeof valor === 'object') {
