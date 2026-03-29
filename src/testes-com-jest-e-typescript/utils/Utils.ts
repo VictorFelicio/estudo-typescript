@@ -23,14 +23,14 @@ export class Utils {
         return Array.from(new Set(array));
     }
 
-    static capitalizarString(s: string): string {
-        if (!s) return '';
-        return s
+    static capitalizarString(str: string): string {
+        if (!str) return '';
+        return str
             .split(' ')
             .map((pedaco) => {
                 pedaco = pedaco.toLowerCase();
-                const c = pedaco[0];
-                return pedaco.replace(c, c.toUpperCase());
+                const primeiraString = pedaco[0];
+                return pedaco.replace(primeiraString, primeiraString.toUpperCase());
             })
             .join(' ');
     }
