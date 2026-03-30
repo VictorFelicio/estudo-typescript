@@ -17,3 +17,19 @@ describe('Testando a função Utils.buscarDadosComDelay', () => {
     await expect(promessa).resolves.toBe('RESOLVIDO');
   });
 });
+
+describe('Testando a função Utils.carregarRecursoComTimeout', () => {
+  jest.useFakeTimers();
+  test('Deve resolver o recurso antes do timeout', async () => {
+    const buscarDado = () => Utils.buscarDadosComDelay('recurso', 500);
+    const promessa = Utils.carregarRecursoComTimeout(buscarDado, 1000);
+    jest.advanceTimersByTime(500);
+    await expect(promessa).resolves.toBe('recurso');
+  });
+  test('Deve lançar erro se houver timeout', async () => {
+    const buscarDado = () => Utils.buscarDadosComDelay('recurso', 1500);
+    const promessa = Utils.carregarRecursoComTimeout(buscarDado, 1000);
+    jest.advanceTimersByTime(1000);
+    await expect(promessa).rejects.toThrow('Timeout ao carregar recurso');
+  });
+});
