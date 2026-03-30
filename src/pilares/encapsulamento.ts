@@ -1,26 +1,26 @@
 class Carro {
-    private valocidadeAtual: number = 0;
-    protected readonly VALOCIDADE_MAXIMA: number = 200;
-    public nome: string;
+  private valocidadeAtual: number = 0;
+  protected readonly VALOCIDADE_MAXIMA: number = 200;
+  public nome: string;
 
-    constructor(nome: string) {
-        this.nome = nome;
-    }
+  constructor(nome: string) {
+    this.nome = nome;
+  }
 
-    private alterarVelocidade(value: number) {
-        const novaVelocidade = this.valocidadeAtual + value;
-        if (novaVelocidade >= 0 && novaVelocidade <= this.VALOCIDADE_MAXIMA) {
-            this.valocidadeAtual = novaVelocidade;
-        }
+  private alterarVelocidade(value: number) {
+    const novaVelocidade = this.valocidadeAtual + value;
+    if (novaVelocidade >= 0 && novaVelocidade <= this.VALOCIDADE_MAXIMA) {
+      this.valocidadeAtual = novaVelocidade;
     }
+  }
 
-    acelerar(value: number) {
-        this.alterarVelocidade(value);
-    }
+  acelerar(value: number) {
+    this.alterarVelocidade(value);
+  }
 
-    get velocidade() {
-        return this.valocidadeAtual;
-    }
+  get velocidade() {
+    return this.valocidadeAtual;
+  }
 }
 
 const carro1 = new Carro('Fusca');

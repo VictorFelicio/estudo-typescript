@@ -1,9 +1,9 @@
 enum DiaSemana {
-    DOMINGO,
-    SEGUNDA,
-    TERCA,
-    QUARTA,
-    QUINTA,
-    SEXTA,
-    SABADO,
+  DOMINGO,
+  SEGUNDA,
+  TERCA,
+  QUARTA,
+  QUINTA,
+  SEXTA,
+  SABADO,
 }

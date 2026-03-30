@@ -1,16 +1,16 @@
 class Curso {
-    private _id: number | undefined;
-    public nome: string | undefined;
+  private _id: number | undefined;
+  public nome: string | undefined;
 
-    get getId() {
-        return this._id;
-    }
+  get getId() {
+    return this._id;
+  }
 
-    set setId(id: number | undefined) {
-        if (id ?? 0) {
-            this._id = id;
-        }
+  set setId(id: number | undefined) {
+    if (id ?? 0) {
+      this._id = id;
     }
+  }
 }
 
 const curso1 = new Curso();
