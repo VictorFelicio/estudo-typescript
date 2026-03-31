@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Leonardo Moura Leitão",
+  "author": "João Victor Felicio",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.1",
